@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.2.0 http://maven.apache.org/xsd/settings-1.2.0.xsd">
+  <profiles>
+    <profile>
+      <id>redhat-ga-repository</id>
+      <repositories>
+        <repository>
+			<id>maven.central</id>
+			<name>Maven Central</name>
+			<url>https://repo1.maven.org/maven2</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+		</repository>
+        <repository>
+          <id>redhat-ga-repository</id>
+          <name>Red Hat GA repository</name>
+          <url>https://maven.repository.redhat.com/ga/</url>
+          <releases>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+            <updatePolicy>daily</updatePolicy>
+          </snapshots>
+        </repository>
+<repository>
+			<id>red-hat-ea-repository</id>
+			<name>Red Hat EA Repository</name>
+			<url>https://maven.repository.redhat.com/earlyaccess/all</url>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+      </repositories>
+      <pluginRepositories>
+<pluginRepository>
+			<id>maven.central</id>
+			<name>Maven Central</name>
+			<url>https://repo1.maven.org/maven2</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+		</pluginRepository>
+        <pluginRepository>
+          <id>redhat-ga-repository</id>
+          <name>Red Hat GA repository</name>
+          <url>https://maven.repository.redhat.com/ga/</url>
+          <releases>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+            <updatePolicy>daily</updatePolicy>
+          </snapshots>
+        </pluginRepository>
+<pluginRepository>
+			<id>red-hat-ea-repository</id>
+			<name>Red Hat EA Repository</name>
+			<url>https://maven.repository.redhat.com/earlyaccess/all</url>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+      </pluginRepositories>
+    </profile>
+     <profile>
+            <id>adobe-public</id>
+            <repositories>
+	        <repository>
+	            <id>adobe-public-releases</id>
+	            <name>Adobe Public Repository</name>
+	            <url>https://repo.adobe.com/nexus/content/groups/public</url>
+	            <releases>
+	                <enabled>true</enabled>
+	                <updatePolicy>never</updatePolicy>
+	            </releases>
+	            <snapshots>
+	                <enabled>false</enabled>
+	            </snapshots>
+	        </repository>
+	    </repositories>
+        </profile>
+  </profiles>
+  <activeProfiles>
+    <activeProfile>redhat-ga-repository</activeProfile>
+  </activeProfiles>
+  <servers>
+    <server>
+      <username>admin</username>
+      <password>admin</password>
+      <id>fabric8.upload.repo</id>
+    </server>
+  </servers>
+</settings>
