@@ -27,4 +27,20 @@
     </pluginRepositories> 
 </profile>
 </profiles>
+          <proxies>
+    <proxy>
+      <id>http_proxy</id>
+      <active>true</active>
+      <protocol>http</protocol>
+      <host>10.255.16.255</host>
+      <port>8080</port>
+    </proxy>
+<proxy>
+      <id>https_proxy</id>
+      <active>true</active>
+      <protocol>http</protocol>
+      <host>10.255.16.255</host>
+      <port>8080</port>
+    </proxy>
+ </proxies>
 </settings>
