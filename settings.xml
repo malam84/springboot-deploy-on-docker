@@ -82,32 +82,8 @@
 		</pluginRepository>
       </pluginRepositories>
     </profile>
-     <profile>
-            <id>adobe-public</id>
-            <repositories>
-	        <repository>
-	            <id>adobe-public-releases</id>
-	            <name>Adobe Public Repository</name>
-	            <url>https://repo.adobe.com/nexus/content/groups/public</url>
-	            <releases>
-	                <enabled>true</enabled>
-	                <updatePolicy>never</updatePolicy>
-	            </releases>
-	            <snapshots>
-	                <enabled>false</enabled>
-	            </snapshots>
-	        </repository>
-	    </repositories>
-        </profile>
   </profiles>
   <activeProfiles>
     <activeProfile>redhat-ga-repository</activeProfile>
   </activeProfiles>
-  <servers>
-    <server>
-      <username>admin</username>
-      <password>admin</password>
-      <id>fabric8.upload.repo</id>
-    </server>
-  </servers>
 </settings>
