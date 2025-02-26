@@ -15,7 +15,7 @@
 	<description>Demo - Springboot Rest Deploy on Docker</description>
 
 	<properties>
-		<java.version>11</java.version>
+		<java.version>17</java.version>
 	</properties>
 
 	<dependencies>
@@ -70,8 +70,9 @@
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
+				<groupId>org.apache.maven.plugins</groupId>
+                                <artifactId>maven-compiler-plugin</artifactId>
+                                <version>3.9.0</version>
 				<configuration>
 				<source>${java.version}</source>
 				<target>${java.version}</target>
